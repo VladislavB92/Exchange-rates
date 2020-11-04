@@ -13,7 +13,11 @@ class CurrencyRateController
     {
         $currencyRate = new CurrencyRateService();
         $actualStats = $currencyRate->execute();
-
+        
+        if (empty($actualStats)) {
+            $this->pullData();
+            return require_once __DIR__  . '/../Views/MainView.php';
+        }
         return require_once __DIR__  . '/../Views/MainView.php';
     }
 
