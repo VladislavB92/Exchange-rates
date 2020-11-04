@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\Services;
+namespace App\Repositories;
 
-use App\Managers\DatabaseManager;
 use App\Models\CurrencyRate;
+use App\Managers\DatabaseManager;
 
-class CurrencyRateService
+class CurrencyDataRepository
 {
-    public function execute(): array
+    public function getAllRates(): array
     {
         $todaysRate = [];
 

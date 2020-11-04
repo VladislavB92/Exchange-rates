@@ -8,7 +8,7 @@
 
 <body>
     <div class="stats">
-        <h1>Echange rates for 04.11.2020.</h1>
+        <h1>Echange rates for <?php echo date('l jS \of F Y'); ?></h1>
 
         <?php foreach ($actualStats as $statsPerUnit) : ?>
             Currency: <strong><?php echo $statsPerUnit->getCurrency(); ?></strong><br>

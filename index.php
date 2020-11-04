@@ -11,4 +11,3 @@ $dotenv->load();
 $controller = new CurrencyRateController();
 
 $controller->index();
-

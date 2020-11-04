@@ -11,15 +11,14 @@ class XmlManager
     private $xml;
     private Service $service;
 
-    public function __construct(string $source)
+    public function __construct()
     {
-        $this->xml = file_get_contents($source);
+        $this->xml = file_get_contents('https://www.bank.lv/vk/ecb.xml');
         $this->service = new Service();
     }
 
     public function mapSource(): void
     {
-
         $this->service->elementMap = [
             'Currency' => 'Sabre\Xml\Deserializer\keyValue'
         ];
