@@ -1,0 +1,19 @@
+{
+    "name": "vlad/exchange-rates",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladislavs Buzinskis",
+            "email": "intelifoxgames@gmail.com"
+        }
+    ],
+    "require": {
+        "sabre/xml": "^2.2",
+        "doctrine/dbal": "^2.12",
+        "vlucas/phpdotenv": "^5.2"
+    }
+}
